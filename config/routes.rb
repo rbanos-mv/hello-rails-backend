@@ -10,5 +10,5 @@ Rails.application.routes.draw do
                registrations: 'users/registrations'
              }
 
-  default_url_options :host => 'example.com'
+  get 'greetings', to: 'greetings#index'
 end
