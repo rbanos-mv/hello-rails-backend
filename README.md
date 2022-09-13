@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Hello rails back-end
 
-> Description the project.
+> This exercise is about creating a "Hello World" application to display a random message. The back-end is built with Rails and the front-end with React.
+
+> ## The front-end for this api service is [Hello react front-end](https://github.com/rbanos-mv/hello-react-frontend)
 
 ## Built With
 
 - Ruby on Rails
 - PostgreSQL
-- devise / devise-jwt - for authentication
-- cancancan - for authorization
 
 ### Getting Started
 
@@ -36,8 +36,6 @@ bundle install
 
 ```
 cp .env.example .env
-
-rails secret
 ```
 
 - Edit file .env
@@ -46,13 +44,11 @@ rails secret
     - DATABASE_HOST
     - DATABASE_USER
     - DATABASE_PASSWORD
-    - DEVISE_JWT_SECRET_KEY
-  - Assign the value returned by the `rails secret` to DEVISE_JWT_SECRET_KEY.
 
 - Type this commands into the terminal:
 
 ```
-rails db:reset
+rails db:create db:reset
 ```
 
 ### Run application
@@ -63,15 +59,7 @@ rails db:reset
 rails server
 ```
 
-- Open your web browser at [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
-
-### Testing
-
-- Type this command into the terminal:
-
-```
-rspec
-```
+- This is an api only application that works together with the [Hello react front-end](https://github.com/rbanos-mv/hello-react-frontend)
 
 ## Authors
 
@@ -79,7 +67,7 @@ rspec
 
 - GitHub: [@rbanos-mv](https://github.com/rbanos-mv)
 - Twitter: [@RobertoBanosMV](https://twitter.com/RobertoBanosMV)
-- LinkedIn: [Roberto A Baños Alvarez](https://linkedin.com/in/roberto-a-baños-alvarez-500766234)
+- LinkedIn: [Roberto A Baños Alvarez](https://linkedin.com/in/roberto-a-banos-alvarez)
 
 ## 🤝 Contributing
 
